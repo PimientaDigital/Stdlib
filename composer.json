@@ -1,0 +1,39 @@
+{
+	"name": "luismayta/stdlib",
+	"description": "Libreria standard Tools",
+	"keywords": [
+        "framework",
+        "library",
+        "stdlib"
+    ],
+    "config": {
+        "process-timeout": 5000
+    },
+    "authors": [
+        {
+            "name": "Luis Alberto Mayta",
+            "email": "slovacus@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/luismayta/Stdlib",
+    "license": "BSD-3-Clause",
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "dev-master",
+        "phpunit/phpunit": "4.1.0",
+        "phpunit/dbunit": "*",
+        "mockery/mockery": "0.9.1",
+        "fabpot/php-cs-fixer": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Stdlib": "library/"
+        }
+    },
+    "config": {
+        "bin-dir": "vendor/bin/"
+    }
+}
