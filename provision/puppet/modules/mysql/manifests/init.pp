@@ -1,12 +1,13 @@
 class mysql 
 {
-    $mysqlPassword = ""
  
+    $mysqlPassword = ""
+
     package 
     { 
         "mysql-server":
             ensure  => present,
-            require => Exec['apt-get update']
+            require => Exec["manager update"]
     }
 
     service 
@@ -30,15 +31,15 @@ class mysql
     exec 
     { 
         "create-default-db":
-            unless => "/usr/bin/mysql -uroot -p$mysqlPassword database",
-            command => "/usr/bin/mysql -uroot -p$mysqlPassword -e 'create database `database`;'",
+            unless => "mysql -uroot -p$mysqlPassword database",
+            command => "mysql -uroot -p$mysqlPassword -e 'create database `database`;'",
             require => [Service["mysql"], Exec["set-mysql-password"]]
     }
 
     exec 
     { 
         "grant-default-db":
-            command => "/usr/bin/mysql -uroot -p$mysqlPassword -e 'grant all on `database`.* to `root@localhost`;'",
+            command => "mysql -uroot -p$mysqlPassword -e 'grant all on `database`.* to `root@localhost`;'",
             require => [Service["mysql"], Exec["create-default-db"]]
     }
 }

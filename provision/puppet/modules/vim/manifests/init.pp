@@ -1,6 +1,6 @@
 class vim {
     package { 'vim':
         ensure => installed,
-        require => Exec['apt-get update']
+        require => Exec["manager update"],
     }
 }
