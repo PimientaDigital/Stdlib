@@ -2,7 +2,6 @@
 	"name": "luismayta/stdlib",
 	"description": "Libreria standard Tools",
 	"keywords": [
-        "framework",
         "library",
         "stdlib"
     ],
@@ -11,13 +10,13 @@
     },
     "authors": [
         {
-            "name": "Luis Alberto Mayta",
+            "name": "Luis Mayta",
             "email": "slovacus@gmail.com",
             "role": "Developer"
         }
     ],
     "homepage": "https://github.com/luismayta/Stdlib",
-    "license": "BSD-3-Clause",
+    "license": "MIT",
     "require": {
         "php": ">=5.3.3"
     },
@@ -27,6 +26,7 @@
         "phpunit/dbunit": "*",
         "mockery/mockery": "0.9.1",
         "phpspec/phpspec": "2.0.0",
+        "way/phpunit-wrappers": "dev-master",
         "fabpot/php-cs-fixer": "dev-master"
     },
     "autoload": {
