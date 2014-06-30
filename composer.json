@@ -16,7 +16,7 @@
         }
     ],
     "homepage": "https://github.com/luismayta/Stdlib",
-    "license": "BSD-3-Clause",
+    "license": "MIT",
     "require": {
         "php": ">=5.3.3"
     },
