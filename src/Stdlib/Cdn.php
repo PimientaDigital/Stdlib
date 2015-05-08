@@ -16,7 +16,6 @@ class Cdn
 		$urlPath = $this->config['static']['urls']['css'];
 		$url = sprintf("%s%s", $urlPath, $file);
 		return $url;
-
 	}
 
 	public function assetJs($file)
@@ -24,7 +23,13 @@ class Cdn
 		$urlPath = $this->config['static']['urls']['js'];
 		$url = sprintf("%s%s", $urlPath, $file);
 		return $url;
+	}
 
+	public function assetImage($file)
+	{
+		$urlPath = $this->config['static']['urls']['images'];
+		$url = sprintf("%s%s", $urlPath, $file);
+		return $url;
 	}
 }
 

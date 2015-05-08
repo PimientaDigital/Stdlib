@@ -43,6 +43,14 @@ class CdnTest extends PHPUnit_Framework_TestCase
 		$this->assertTrue($urlStaticFile == $urlPath);
 	}
 
+	public function testCreateUrlStaticImage()
+	{
+		$this->cdn = new Cdn($this->config);
+		$urlPath = $this->cdn->assetImage("/file.jpg");
+		$urlStaticFile = 'http://images.static.cdn.com/file.jpg';
+
+		$this->assertTrue($urlStaticFile == $urlPath);
+	}
 	public function setDown()
 	{
 		$this->cdn = null;
