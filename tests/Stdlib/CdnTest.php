@@ -28,11 +28,20 @@ class CdnTest extends PHPUnit_Framework_TestCase
     public function testCreateUrlStaticCss()
     {
 		$this->cdn = new Cdn($this->config);
-		$urlPathCss = $this->cdn->assetCss("/file.css");
-		$urlStaticCss = 'http://css.static.cdn.com/file.css';
+		$urlPath = $this->cdn->assetCss("/file.css");
+		$urlStaticFile = 'http://css.static.cdn.com/file.css';
 
-		$this->assertTrue($urlStaticCss == $urlPathCss);
+		$this->assertTrue($urlStaticFile == $urlPath);
     }
+
+	public function testCreateUrlStaticJs()
+	{
+		$this->cdn = new Cdn($this->config);
+		$urlPath = $this->cdn->assetJs("/file.js");
+		$urlStaticFile = 'http://js.static.cdn.com/file.js';
+
+		$this->assertTrue($urlStaticFile == $urlPath);
+	}
 
 	public function setDown()
 	{

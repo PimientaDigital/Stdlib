@@ -13,11 +13,18 @@ class Cdn
 
 	public function assetCss($file)
 	{
-		$cssUrl = $this->config['static']['urls']['css'];
-		$url = sprintf("%s%s", $cssUrl, $file);
+		$urlPath = $this->config['static']['urls']['css'];
+		$url = sprintf("%s%s", $urlPath, $file);
 		return $url;
 
 	}
 
+	public function assetJs($file)
+	{
+		$urlPath = $this->config['static']['urls']['js'];
+		$url = sprintf("%s%s", $urlPath, $file);
+		return $url;
+
+	}
 }
 
