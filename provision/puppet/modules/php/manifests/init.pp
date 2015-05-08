@@ -10,7 +10,6 @@ class php
     "php5-mcrypt",
     "php5-gd",
     "php5-curl",
-    "libapache2-mod-php5",
     "php5-xdebug",
     "php5-intl",
     "php5-sqlite"
