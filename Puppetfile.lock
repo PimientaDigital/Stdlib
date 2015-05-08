@@ -1,0 +1,14 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    maestrodev/wget (1.7.0)
+    puppetlabs/git (0.3.0)
+      puppetlabs/vcsrepo (>= 0.1.0)
+    puppetlabs/stdlib (4.6.0)
+    puppetlabs/vcsrepo (1.2.0)
+
+DEPENDENCIES
+  maestrodev/wget (>= 0)
+  puppetlabs/git (>= 0)
+  puppetlabs/stdlib (>= 0)
+
