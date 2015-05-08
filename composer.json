@@ -15,6 +15,11 @@
             "role": "Developer"
         }
     ],
+    "support": {
+        "issues": "https://github.com/luismayta/StdLib/issues",
+        "wiki": "https://github.com/luismayta/StdLib/wiki",
+        "source": "https://github.com/luismayta/StdLib"
+    },
     "homepage": "https://github.com/luismayta/Stdlib",
     "license": "MIT",
     "require": {
@@ -31,7 +36,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Stdlib": "library/"
+            "Stdlib": "src/"
         }
     },
     "config": {
