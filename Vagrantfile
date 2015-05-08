@@ -2,10 +2,10 @@
 # vi: set ft=ruby :
 Vagrant.configure("2") do |config|
     config.vm.define :guest do |guest_config|
-            guest_config.vm.box = "precise32"
-            guest_config.vm.box_url = "http://files.vagrantup.com/precise32.box"
+
+            guest_config.vm.box = "ubuntu-14.4"
+            guest_config.vm.box_url = "https://github.com/kraksoft/vagrant-box-ubuntu/releases/download/14.04/ubuntu-14.04-amd64.box"
             guest_config.ssh.forward_agent = true
-             
             #HostManager Start
 
             guest_config.hostmanager.enabled = true
@@ -38,6 +38,7 @@ Vagrant.configure("2") do |config|
             #guest_config.vm.provision :shell, :inline => "echo \"America/Bogota\" | sudo tee /etc/timezone && dpkg-reconfigure --frontend noninteractive tzdata"
             #guest_config.vm.provision :shell, :path => "provision/shell/main.sh"
 
+            guest_config.vm.provision :shell, :path => "provision/shell/main.sh"
             guest_config.vm.provision :puppet do |puppet|
                 puppet.manifests_path = "provision/puppet/manifests"
                 puppet.manifest_file  = "site.pp"
@@ -46,6 +47,5 @@ Vagrant.configure("2") do |config|
             end
 
             guest_config.vm.provision :hostmanager
-            guest_config.vm.provision :shell, :path => "provision/shell/composer.sh"
     end
 end
