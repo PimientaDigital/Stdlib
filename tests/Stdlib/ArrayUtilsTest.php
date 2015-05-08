@@ -7,8 +7,9 @@ use PHPUnit_Framework_TestCase;
 class ArrayUtilsTest extends PHPUnit_Framework_TestCase
 {
 
-    public function testArrayMerg()
+    public function testArrayMerge()
     {
+		$this->assertTrue(true);
     }
 
 }
