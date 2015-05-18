@@ -18,6 +18,12 @@ abstract class ArrayUtils
         return $data;
     }
 
+	public static function keysLowers($array)
+	{
+		$keys = array_keys($array);
+		return array_map('strtolower', $keys);
+	}
+
     public static function is_assoc($var)
     {
         return is_array($var) && array_diff_key($var,
