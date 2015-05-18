@@ -126,4 +126,15 @@ abstract class ArrayUtils
         return false;
     }
 
+	public static function convertKeysLower($array)
+	{
+		$tmpArray = array();
+		foreach($array as $key => $value)
+		{
+			$tmpArray[strtolower($key)] = $value;
+		}
+
+		return $tmpArray;
+	}
+
 }

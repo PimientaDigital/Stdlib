@@ -28,5 +28,14 @@ class ArrayUtilsTest extends PHPUnit_Framework_TestCase
 
 	}
 
+	public function testConvertKeysLower()
+	{
+		$array = array('KEY1' => '1', 'Key2' => '2');
+		$keysLowers = array('key1' => '1', 'key2' => '2');
+		$response = ArrayUtils::convertKeysLower($array);
+
+		$this->assertEquals($keysLowers, $response);
+	}
+
 }
 
