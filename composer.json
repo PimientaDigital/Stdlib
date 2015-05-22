@@ -1,5 +1,5 @@
 {
-	"name": "luismayta/stdlib",
+	"name": "pimientadigital/stdlib",
 	"description": "Libreria standard Tools",
 	"keywords": [
         "library",
@@ -16,11 +16,11 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/luismayta/StdLib/issues",
-        "wiki": "https://github.com/luismayta/StdLib/wiki",
-        "source": "https://github.com/luismayta/StdLib"
+        "issues": "https://github.com/pimientadigital/StdLib/issues",
+        "wiki": "https://github.com/pimientadigital/StdLib/wiki",
+        "source": "https://github.com/pimientadigital/StdLib"
     },
-    "homepage": "https://github.com/luismayta/Stdlib",
+    "homepage": "https://github.com/pimientadigital/Stdlib",
     "license": "MIT",
     "require": {
         "php": ">=5.3.3"
