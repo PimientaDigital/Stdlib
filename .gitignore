@@ -4,3 +4,4 @@ build
 .composer.lock
 .tmp/
 .librarian
+*.lock
