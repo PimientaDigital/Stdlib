@@ -1,14 +1,8 @@
-# Enable XDebug ("0" | "1")
-$use_xdebug = "0"
+Exec { path => "/usr/bin:/usr/sbin/:/bin:/sbin" }
 
-# Default path
-Exec 
-{
-  path => ["/usr/bin", "/bin", "/usr/sbin", "/sbin", "/usr/local/bin", "/usr/local/sbin"]
+exec { "manager update":
+    command => "apt-get update",
 }
 
-include bootstrap
-include apache
 include php
-include mysql
 include vim

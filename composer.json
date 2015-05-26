@@ -1,5 +1,5 @@
 {
-	"name": "luismayta/stdlib",
+	"name": "pimientadigital/stdlib",
 	"description": "Libreria standard Tools",
 	"keywords": [
         "library",
@@ -15,7 +15,12 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/luismayta/Stdlib",
+    "support": {
+        "issues": "https://github.com/pimientadigital/StdLib/issues",
+        "wiki": "https://github.com/pimientadigital/StdLib/wiki",
+        "source": "https://github.com/pimientadigital/StdLib"
+    },
+    "homepage": "https://github.com/pimientadigital/Stdlib",
     "license": "MIT",
     "require": {
         "php": ">=5.3.3"
@@ -31,7 +36,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Stdlib": "library/"
+            "Stdlib": "src/"
         }
     },
     "config": {

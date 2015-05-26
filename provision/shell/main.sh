@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-ROOT_PATH=./
 
-./composer.sh
+/var/www/provision/shell/ruby.sh
+/var/www/provision/shell/puppet.sh

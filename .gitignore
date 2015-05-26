@@ -1,8 +1,7 @@
 vendor
 build
-composer.phar
 .vagrant/
 .composer.lock
-composer.lock
 .tmp/
 .librarian
+*.lock
