@@ -1,7 +1,7 @@
 StdLib 
 ======
 
-[![Travis CI](https://travis-ci.org/pimientadigital/Stdlib.svg?branch=master)](https://travis-ci.org/pimientadigital/Stdlib)
+[![Travis CI](https://travis-ci.org/PimientaDigital/Stdlib.svg?branch=master)](https://travis-ci.org/PimientaDigital/Stdlib)
 
 
 ---
