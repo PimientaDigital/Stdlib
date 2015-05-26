@@ -51,6 +51,7 @@ class CdnTest extends PHPUnit_Framework_TestCase
 
 		$this->assertTrue($urlStaticFile == $urlPath);
 	}
+
 	public function setDown()
 	{
 		$this->cdn = null;

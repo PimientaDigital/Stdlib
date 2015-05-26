@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
- 
+
 PUPPET_DIR=provision/puppet/modules_contrib
- 
+
 if [ "$(gem search -i librarian-puppet)" = "false" ]; then
   bundler install
 else
