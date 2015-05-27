@@ -23,7 +23,7 @@
     "homepage": "https://github.com/pimientadigital/Stdlib",
     "license": "MIT",
     "require": {
-        "php": ">=5.3.3"
+        "php": ">=5.3"
     },
     "require-dev": {
         "fzaninotto/faker": "dev-master",
