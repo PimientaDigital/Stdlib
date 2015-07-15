@@ -13,7 +13,7 @@ namespace Stdlib;
  *
  */
 
-use Stdlib/ArrayUtils;
+use Stdlib\ArrayUtils;
 
 class Environment
 {
