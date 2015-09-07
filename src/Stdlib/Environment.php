@@ -54,7 +54,7 @@ class Environment
             if (isset($_SERVER[self::SERVER_VAR]))
                 $mode = $_SERVER[self::SERVER_VAR];
             else
-                throw new Exception('SetEnv not defined in Apache config.');
+                throw new \Exception('SetEnv not defined in Apache config.');
         }
 
         return $mode;
@@ -71,18 +71,16 @@ class Environment
         // Load main config
         $configMainFile = $dirconfig . DIRECTORY_SEPARATOR . self::MAIN_CONFIG;
         if (!file_exists($configMainFile))
-            throw new Exception('Cannot find config file "' . $configMainFile . '".');
+            throw new \Exception('Cannot find config file "' . $configMainFile . '".');
 
         $config = include($configMainFile);
 
         // Load specific config
         $configFile = $dirconfig . DIRECTORY_SEPARATOR . 'mode_' . strtolower($this->_mode) . '.php';
         if (!file_exists($configFile))
-            throw new Exception('Cannot find config file "' . $configFile . '".');
+            return $this->_config= $config;
 
         $configEnvironment = include($configFile);
-
-        // Merge config arrays into one
         $this->_config = ArrayUtils::merge($config, $configEnvironment);
     }
 
